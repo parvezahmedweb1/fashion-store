@@ -1,0 +1,9 @@
+.add-to-cart {
+  position: sticky;
+  top: 0;
+}
+.grand-total {
+  background-color: #b48288;
+  color: #fff;
+  border-radius: 0 0 5px 5px;
+}

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import Row from "react-bootstrap/Row";
+import AddToCart from "../AddToCart/AddToCart";
 import Product from "../Product/Product";
 import "./Shop.css";
 const Shop = () => {
@@ -14,7 +15,7 @@ const Shop = () => {
   return (
     <section id="shop">
       {/* products */}
-      <div className="products wrapper border">
+      <div className="products wrapper">
         <div>
           <h4 className="py-4">NEW INCOMES</h4>
         </div>
@@ -25,7 +26,9 @@ const Shop = () => {
         </Row>
       </div>
       {/* order */}
-      <div className="order border">Order</div>
+      <div className="order border">
+        <AddToCart />
+      </div>
     </section>
   );
 };
