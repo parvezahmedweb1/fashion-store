@@ -1,0 +1,25 @@
+.cart-btn {
+  transition: 0.5s ease;
+  background-color: #b48288;
+  color: #fff;
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+}
+.cart-btn:hover {
+  background-color: #fff;
+  color: #b48288;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.price {
+  position: absolute;
+  bottom: 85px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.star-icon {
+  position: absolute;
+  bottom: 70px;
+  color: #b48288;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
