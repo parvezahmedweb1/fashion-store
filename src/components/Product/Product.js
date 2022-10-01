@@ -3,8 +3,9 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import { AiFillStar } from "react-icons/ai";
 import "./Product.css";
-const Product = ({ product }) => {
+const Product = ({ product, handelAddToCart }) => {
   const { name, img, price } = product;
+
   return (
     <Col>
       <Card
@@ -23,7 +24,10 @@ const Product = ({ product }) => {
             <AiFillStar />
           </div>
         </Card.Body>
-        <button className="cart-btn w-100 border-0 position-absolute bottom-0 py-2 fw-bold">
+        <button
+          onClick={() => handelAddToCart(product)}
+          className="cart-btn w-100 border-0 position-absolute bottom-0 py-2 fw-bold"
+        >
           Add To Cart
         </button>
       </Card>
